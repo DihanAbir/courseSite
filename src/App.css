@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navDiv {
+  background-image: linear-gradient(#8d00ff, #4857f6);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand {
+  color: white !important;
+  font-size: 32px;
+  font-weight: bold !important;
 }
+.navDiv ul li a {
+  color: white !important;
+}
+/* banner */
+.banner {
+  background: url(../src/Images/h1_hero.png) no-repeat;
+  z-index: -111111111;
+  background-position: cover;
+  background-size: cover;
+  height: 90vh;
+}
+.banner-content {
+  height: 80vh;
+}
+.banner-content h1 {
+  margin-top: 20%;
+  font-size: 60px !important;
+  color: white !important;
+}
+.banner-content p {
+  margin-top: 4%;
+  font-size: 20px !important;
+  color: white !important;
+}
+.btn-custome-p {
+  background: salmon;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn-custome-p:focus {
+  outline: none;
+}
+.btn-custome-p:hover {
+  background: slateblue;
+}
+/* banner */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* brandTag */
+.brandTag {
+  width: 90%;
+  margin: 0 auto;
+}
+.brandTag .row {
+  margin-top: -4%;
+}
+.brandTag .bdiv {
+  padding: 40px 8px 0px 20px;
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  color: black;
+}
+.brandTag .bdiv h5,
+.brandTag .bdiv p {
+  color: rgb(55, 80, 219);
+}
+.brandTag .bdiv .icons svg {
+  font-size: 85px;
+  color: rgb(164, 94, 245);
+  padding: 0px 5px 5px 0px;
+}
+.sectionHeader {
+  margin-top: 10%;
+  color: slateblue;
+  font-size: 40px;
+  font-weight: bold;
+}
+/* brandTag */
+
+.featured .courseCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: -webkit-auto;
+  color: #6e7697;
+}
+.featured .courseCard .title {
+  color: rgb(44, 44, 155);
+  font-size: 20px;
+}
+.featured .courseCard .description {
+  line-height: 22px;
+  font-size: 13px;
+  font-family: -webkit-pictograph;
+  word-spacing: 1px;
+  letter-spacing: 0.6px;
+}
+.featured .courseCard .category {
+  font-size: 16px;
+  font-family: -webkit-pictograph;
+  word-spacing: 1px;
+  letter-spacing: 0.6px;
+}
+.featured .courseCard .img img {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: 0.4s ease-in-out;
+}
+.featured .courseCard:hover .img img {
+  transform: scale(1.01);
+}
+.featured .courseCard .perReview {
+  color: rgb(245, 148, 38);
+}
+.featured .courseCard .totalprice {
+  color: rgba(13, 24, 126, 0.87);
+}
+.featured .courseCard .btn-cust-primary {
+  color: rgb(4 27 232);
+  font-size: 19px;
+  border: 1px solid rgba(189, 194, 238, 0.87);
+  padding: 20px 20px;
+}
+.featured .courseCard:hover .btn-cust-primary {
+  color: #fff;
+  font-size: 19px;
+  background: rgba(241, 169, 75, 0.87);
+  padding: 20px 20px;
+}
+button:focus {
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* banner2 */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner2 {
+  padding: 20% 5% 5%;
+  background: #4857f6;
 }
+.coursesMaindiv {
+  padding-top: 10%;
+}
+/* banner2 */
